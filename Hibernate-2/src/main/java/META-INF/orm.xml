@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+	<entity class="com.entity.Employee" access="PROPERTY"> <!-- Its define Entity -->
+
+		<table name="xemployee"></table> <!-- This is Optional -->
+
+		<attributes>
+			<id name="eid">
+				<column name="id" /> <!--This is Optional -->
+			</id>
+
+			<basic name="ename">
+				<column name="name" length="30" /> <!--This is Optional -->
+			</basic>
+
+			<basic name="eaddress">
+				<column name="address" length="100" /> <!--This is Optional -->
+			</basic>
+
+			<basic name="esalary">
+				<column name="salary" /> <!--This is Optional -->
+			</basic>
+
+		</attributes>
+	</entity>
+</entity-mappings>
