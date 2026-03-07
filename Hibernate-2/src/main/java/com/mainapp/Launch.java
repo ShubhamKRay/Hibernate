@@ -18,7 +18,7 @@ public class Launch {
 		// insert(em);
 		// read(em);
 		// update(em);
-		// delete(em);
+		 delete(em);
 
 		em.close();
 		emf.close();
