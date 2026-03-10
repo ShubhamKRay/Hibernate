@@ -52,8 +52,8 @@ public class Launch {
 
 		EntityManager em = emf.createEntityManager();
 
-		insert(em);
-		// read(em);
+		 insert(em);
+		 //read(em);
 		// update(em);
 		// delete(em);
 
@@ -111,7 +111,7 @@ public class Launch {
 		EntityTransaction transaction = em.getTransaction();
 		transaction.begin();
 
-		Employee employee = new Employee(15, "vivek", "jaipur", 3500);
+		Employee employee = new Employee(17, "salu", "manipur", 3700);
 		em.persist(employee);
 
 		transaction.commit();
